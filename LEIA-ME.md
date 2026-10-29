@@ -16,8 +16,8 @@ A skill usa o programa e o notebook incluídos. O pacote funciona sem IA, assina
 
 ## Opção A — mesmo fluxo no Google Colab
 
-1. Baixe e extraia o ZIP deste pacote. Guarde a pasta inteira; o ZIP do GitHub pode nomeá-la `tse-reproducivel-main`.
-2. [Abra diretamente o notebook no Colab](https://colab.research.google.com/github/antunesclarissa/tse-reproducivel/blob/main/assets/Analise_TSE_2026.ipynb) usando sua própria conta Google. Como alternativa, use o upload descrito a seguir.
+1. Baixe e extraia o ZIP deste pacote. Guarde a pasta inteira; o ZIP do GitHub pode nomeá-la `eleicoes-brasil-2026-2-turno-main`.
+2. [Abra diretamente o notebook no Colab](https://colab.research.google.com/github/antunesclarissa/eleicoes-brasil-2026-2-turno/blob/main/assets/Analise_TSE_2026.ipynb) usando sua própria conta Google. Como alternativa, use o upload descrito a seguir.
 3. Use **Arquivo → Fazer upload de notebook** e selecione `assets/Analise_TSE_2026.ipynb`. Os nomes dos menus podem variar com o idioma.
 4. Na primeira seção, confira os parâmetros. O padrão `ESCOPO = "PILOTO"` processa apenas o Acre para testar a instalação. Para todas as UFs e o exterior, escolha `ESCOPO = "COMPLETO"` e mantenha `INCLUIR_EXTERIOR = True`.
 5. Mantenha `HORARIO_CORTE = "17:16:00"` para o corte inclusivo padrão. O dia é `2026-10-25`, e o corte é interpretado em Brasília sob a hipótese `RELOGIO_ARQUIVO`. A versão não foi adaptada para outras eleições.
@@ -30,7 +30,7 @@ O Colab compartilha texto, código, saídas e comentários quando um notebook é
 
 ## Opção B — executar por comando
 
-Use Python 3.11 ou superior compatível com as bibliotecas. Execute os comandos dentro da pasta extraída `tse-reproducivel`. O piloto é a forma de conferir sua instalação antes do processamento nacional. A duração, o espaço em disco e a memória dependem do escopo e da máquina; GPU não é necessária.
+Use Python 3.11 ou superior compatível com as bibliotecas. Execute os comandos dentro da pasta extraída `eleicoes-brasil-2026-2-turno` (ou `eleicoes-brasil-2026-2-turno-main` no ZIP do GitHub). O piloto é a forma de conferir sua instalação antes do processamento nacional. A duração, o espaço em disco e a memória dependem do escopo e da máquina; GPU não é necessária.
 
 ### macOS ou Linux
 
@@ -121,7 +121,7 @@ As faixas 17h/17h16/19h dos gráficos comparativos são fixas. Alterar `--corte`
 
 ## Opção C — usar como skill no Codex
 
-A skill é opcional. Para descoberta local, copie a pasta inteira `tse-reproducivel` para `.agents/skills/` dentro do projeto onde você trabalha. O resultado deve ser:
+A skill é opcional. Para descoberta local, copie a pasta do repositório para `.agents/skills/tse-reproducivel/` dentro do projeto onde você trabalha. A skill mantém o identificador `tse-reproducivel`. O resultado deve ser:
 
 ```text
 seu-projeto/.agents/skills/tse-reproducivel/SKILL.md
@@ -147,7 +147,7 @@ A descoberta e a invocação seguem a [documentação oficial de skills](https:/
 
 **Distribuição direta:** envie o ZIP deste pacote, ou disponibilize-o para download. Quem receber poderá extrair e seguir as opções A, B ou C.
 
-**Repositório público:** compartilhe o endereço deste [repositório](https://github.com/antunesclarissa/tse-reproducivel) ou o link do notebook no Colab. Para manter uma versão própria, faça um fork ou crie um repositório com os arquivos do pacote. O Colab também pode abrir notebooks hospedados no GitHub.
+**Repositório público:** compartilhe o endereço deste [repositório](https://github.com/antunesclarissa/eleicoes-brasil-2026-2-turno) ou o link do notebook no Colab. Para manter uma versão própria, faça um fork ou crie um repositório com os arquivos do pacote. O Colab também pode abrir notebooks hospedados no GitHub.
 
 **Compartilhamento pelo Colab:** carregue a cópia limpa em uma conta escolhida para publicação e configure leitura. Compartilhar um arquivo por uma conta pode associá-lo ao perfil e ao proprietário dessa conta; remover dados do arquivo não torna a conta anônima. Por isso, para distribuir o código sem vínculo com o Drive original, prefira o ZIP ou um repositório dedicado.
 

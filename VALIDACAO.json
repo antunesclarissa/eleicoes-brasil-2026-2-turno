@@ -29,7 +29,7 @@
       "sha512": "95f19aad9534d21ea703670030ea1d51b5a89c2b40f3ba5466d60de2765b9067f225fd863000c282fe47fb6457a9f43df5fd536dec7753f3813667c99b3efa3b"
     }
   ],
-  "notebook_publico_sha256": "d911a0d60c2ccc9173baf729e45df6f7a1fc7438586115b78e6265a437f8ebf4",
+  "notebook_publico_sha256": "630e78f91a6dd119a851efc73dc7c5d2f1b1ee71f3eb8c38e65e982a8e229419",
   "outros_testes": [
     "corte inclusivo no segundo exato",
     "preservação de horário desconhecido",

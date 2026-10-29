@@ -4,7 +4,7 @@ Programa em Python e notebook para baixar dados públicos do Tribunal Superior E
 
 Esta versão analisa **Presidente, segundo turno de 2026**, com data de referência **25/10/2026**. Há um piloto no Acre e um modo nacional com as 27 UFs e o exterior. O projeto é independente e não é um produto oficial do TSE.
 
-**Comece pelo Colab:** [abrir o notebook no Google Colab](https://colab.research.google.com/github/antunesclarissa/tse-reproducivel/blob/main/assets/Analise_TSE_2026.ipynb).
+**Comece pelo Colab:** [abrir o notebook no Google Colab](https://colab.research.google.com/github/antunesclarissa/eleicoes-brasil-2026-2-turno/blob/main/assets/Analise_TSE_2026.ipynb).
 
 ## O que este projeto faz
 
@@ -43,7 +43,7 @@ Para outras UFs e versões, use o catálogo. Há também uma [lista de links por
 
 ## 2. Rodar no Colab, sem instalar Python no computador
 
-1. [Abra o notebook deste repositório no Colab](https://colab.research.google.com/github/antunesclarissa/tse-reproducivel/blob/main/assets/Analise_TSE_2026.ipynb) e entre na sua própria conta Google.
+1. [Abra o notebook deste repositório no Colab](https://colab.research.google.com/github/antunesclarissa/eleicoes-brasil-2026-2-turno/blob/main/assets/Analise_TSE_2026.ipynb) e entre na sua própria conta Google.
 2. Se quiser guardar as suas alterações, salve uma cópia na sua conta pelo menu Arquivo. Isso salva o notebook; não é necessário montar o Drive no ambiente de execução.
 3. Confira a primeira seção, **Parâmetros**. O padrão é `ESCOPO = "PILOTO"`, com `UF_PILOTO = ["AC"]`, para testar com uma base menor.
 4. Para todas as UFs e exterior, altere para `ESCOPO = "COMPLETO"` e mantenha `INCLUIR_EXTERIOR = True`.
@@ -60,8 +60,8 @@ Requisitos: Git, para clonar o repositório, e **Python 3.11 ou superior compat�
 ### macOS ou Linux
 
 ```bash
-git clone https://github.com/antunesclarissa/tse-reproducivel.git
-cd tse-reproducivel
+git clone https://github.com/antunesclarissa/eleicoes-brasil-2026-2-turno.git
+cd eleicoes-brasil-2026-2-turno
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -77,8 +77,8 @@ python scripts/tse.py executar --escopo nacional --corte 17:16:00 --saida result
 ### Windows — PowerShell
 
 ```powershell
-git clone https://github.com/antunesclarissa/tse-reproducivel.git
-cd tse-reproducivel
+git clone https://github.com/antunesclarissa/eleicoes-brasil-2026-2-turno.git
+cd eleicoes-brasil-2026-2-turno
 py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe scripts\tse.py executar --escopo piloto --corte 17:16:00 --saida resultados_piloto
