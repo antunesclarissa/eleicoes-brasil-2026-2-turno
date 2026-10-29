@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reprodução dos BUs do TSE"
+  short_description: "Executa e explica análises reproduzíveis dos BUs"
+  default_prompt: "Use $tse-reproducivel para executar a análise no meu ambiente e explicar a cobertura e os limites dos resultados."
