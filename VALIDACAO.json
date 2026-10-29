@@ -1,0 +1,50 @@
+{
+  "data_local": "2026-10-29",
+  "versao_pacote": "1.0.0",
+  "ambiente_testado": {
+    "sistema": "Darwin",
+    "arquitetura": "arm64",
+    "python": "3.11.4",
+    "instalacao_em_ambiente_novo": true
+  },
+  "escopo_executado_nesta_entrega": "PILOTO_AC",
+  "ufs": [
+    "AC"
+  ],
+  "corte_brasilia_inclusivo": "2026-10-25 17:16:00",
+  "secoes": 2270,
+  "votos_validos": 432228,
+  "votos_por_candidato": {
+    "13": 144513,
+    "22": 287715
+  },
+  "celulas_codigo_sem_erro": 15,
+  "graficos_embutidos_e_inspecionados": 10,
+  "checagens_contabeis_com_alertas": 0,
+  "sha512_oficial_conferido": true,
+  "recursos_publicos_testados": [
+    {
+      "uf": "AC",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_AC_261020260742.zip",
+      "sha512": "95f19aad9534d21ea703670030ea1d51b5a89c2b40f3ba5466d60de2765b9067f225fd863000c282fe47fb6457a9f43df5fd536dec7753f3813667c99b3efa3b"
+    }
+  ],
+  "notebook_publico_sha256": "d911a0d60c2ccc9173baf729e45df6f7a1fc7438586115b78e6265a437f8ebf4",
+  "outros_testes": [
+    "corte inclusivo no segundo exato",
+    "preservação de horário desconhecido",
+    "limites e total exato quando identificável",
+    "rejeição de base vazia, coluna ausente e votos inválidos",
+    "preparação do escopo nacional com corte às 17h sem execução",
+    "validação de formato da skill",
+    "detecção de referências pessoais com exemplos controlados",
+    "scanner da distribuição sem achados"
+  ],
+  "limites_validacao": [
+    "Esta validação executou o piloto do Acre; não executou uma totalização nacional.",
+    "Windows e Linux têm instruções, mas não foram executados nesta validação.",
+    "A reconciliação com totalização oficial independente permanece pendente.",
+    "A busca textual de privacidade não constitui garantia de detecção universal."
+  ],
+  "documentacao_publica": "Apresentação, fontes e roteiro independentes de conversas anteriores. O código das células permanece igual ao validado; apenas o texto introdutório do notebook foi atualizado."
+}
